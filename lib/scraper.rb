@@ -21,6 +21,7 @@ class Scraper
     doc = Nokogiri::HTML(html)
   end
   def get_courses
+    doc.css(".section-3G3Dj")
   end
   def make_courses
   end
