@@ -32,7 +32,7 @@ class Scraper
   def make_courses
     course_offerings=self.get_courses
     course_offerings.each do |course|
-    Course.new(course.text.strip)
+    Course.new()
     end
   end
   
