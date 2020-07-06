@@ -30,6 +30,9 @@ class Scraper
     # puts course_offerings
   end
   def make_courses
+    courses.each do |course|
+    puts course.text.strip
+    end
   end
   
 end
