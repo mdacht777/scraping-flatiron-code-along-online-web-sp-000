@@ -32,9 +32,11 @@ class Scraper
   def make_courses
     course_offerings=self.get_courses
     course_offerings.each do |course|
-      puts course
+      # puts course
     a=Course.new()
     a.title="test"
+    a.schedule="whenever"
+    a.description="foo"
     end
   end
   
