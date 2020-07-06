@@ -23,7 +23,7 @@ class Scraper
   def get_courses
     html = open("https://flatironschool.com/")
     doc = Nokogiri::HTML(html)
-    @course_offerings=doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid3-2XAK6G")
+    self.course_offerings=doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid3-2XAK6G")
     puts course_offerings
   end
   def make_courses
