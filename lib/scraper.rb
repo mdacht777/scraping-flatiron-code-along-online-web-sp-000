@@ -22,7 +22,6 @@ class Scraper
   end
   def get_courses
     html = open("https://flatironschool.com/")
-    Nokogiri::HTML(html)
     doc = Nokogiri::HTML(html)
     course_offerings=doc.css("#2a778efd-1685-5ec6-9e5a-0843d6a88b7b .inlineMobileLeft-2Yo002.imageTextBlockGrid3-2XAK6G")
   end
